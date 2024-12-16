@@ -1,5 +1,5 @@
-name: 'Deploy to AWS S3'
-description: 'Deploy a static website to AWS S3'
+name: 'Deplot to the S3 using Docker'
+description: 'Deploy a static website via AWS S3 using Docker'
 inputs:
   bucket:
     description: 'The S3 Bucket name'
@@ -15,5 +15,5 @@ outputs:
   website-url:
     description: 'The URL of the deployed website in S3 Bucket'
 runs:
-  using: 'node20'
-  main: 'main.js'
+  using: 'docker'
+  image: 'Dockerfile'
