@@ -11,6 +11,10 @@ inputs:
   dist-folder:
     description: 'The folder containing deployable files'
     required: true
+outputs:
+  website-url:
+    description: 'The URL of the deployed website in S3 Bucket'
+    
 runs:
   using: 'node20'
   main: 'main.js'
